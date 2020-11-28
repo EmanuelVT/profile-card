@@ -1,0 +1,179 @@
+html{
+    box-sizing: border-box;
+    
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    position: relative;
+    top:800px;
+    
+  }
+
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+
+
+
+body{
+    background-image: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat;
+    background-position: 
+        top 50% left -120px,
+        top -50% right -40px;
+    
+    background-color: hsl(185, 75%, 39%);
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 18px;
+}
+
+
+
+.container{
+    background-color: white;
+    background-image: url(images/bg-pattern-card.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 400px;
+    height: 450px;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    margin: 0;
+    position: absolute;
+    top: 48%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    border-radius: 5%;
+}
+
+.header-card{
+    position: absolute;
+    background-color: red;
+    padding-top: 40px;
+    bottom: 180px;
+}
+
+.profile-image img{
+    border-radius: 50%;
+    border: 5px solid white;
+    position: relative;
+    bottom: 40px;
+    left: 37%;
+}
+
+.user-info{
+    text-align: center;
+    position: relative;
+    bottom: 15px;
+}
+
+.strong-gray{
+    font-weight: 700;
+}
+
+.username{
+    margin-right: 5px;
+}
+
+.dark-grey{
+    font-weight: 400;
+    color: hsl(0, 0%, 59%);
+}
+
+.upper-container{
+  position: relative;
+   margin: 0 auto;
+   border-bottom: 1px solid hsl(0, 0%, 83%);
+   width: 400px;
+   right: 15px;
+}
+
+.tags{
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.row{
+    position: relative;
+    top: 30px;
+    text-align: center;
+}
+
+p.strong-gray {
+    margin-bottom: 0;
+}
+
+
+
+/* MOBILE PHONE SIZES*/
+
+
+
+@media (max-width: 540px){
+    body{
+        background-position: 
+        top 65% left 130%,
+        top -40% right 125%;
+    }
+}
+
+
+@media (max-width: 380px){
+    body{
+        background-position: 
+        top 60% left 120%,
+        top -30% right 120%;
+    }
+    .container{
+        width: 320px;
+        margin: 0 auto;
+    }
+    .upper-container{
+        width: 320px;
+    }
+    .profile-image img{
+        left:35%;
+    }
+
+
+} 
+
+@media(max-width:1396px) and (min-width: 990px){
+    body{
+        background-position: 
+        top 50% left -400px,
+        top -50% right -400px;
+    }
+}
+
+
+@media(max-width:990px) and (min-width:540px){
+    body{
+        background-position: 
+        top 65% left -450px,
+        top -40% right -450px;
+    }
+}
+
+@media (max-width:320px){
+    .container{
+        width: 270px;
+        margin: 0 auto;
+        height: 420px;
+    }
+    .upper-container{
+        width: 270px;
+        bottom: 40px;
+    }
+
+    .profile-image img{
+        left:32%;
+    }
+
+    .row{
+        top:0px;
+    }
+}
